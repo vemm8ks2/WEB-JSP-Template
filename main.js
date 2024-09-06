@@ -3,7 +3,9 @@ class Header extends HTMLElement {
     super();
 
     const container = document.querySelector("#container");
-    container.insertAdjacentHTML('afterbegin', `
+    container.insertAdjacentHTML(
+      "afterbegin",
+      `
       <header>
         <div class="header-top-wrapper">
           <!-- TEAM.T 로고 부분 -->
@@ -294,7 +296,8 @@ class Header extends HTMLElement {
           </ul>
         </nav>
       </header>
-    `)
+    `
+    );
   }
 }
 
@@ -302,8 +305,10 @@ class Footer extends HTMLElement {
   constructor() {
     super();
 
-    const container = document.querySelector('#container');
-    container.insertAdjacentHTML('beforeend', `
+    const container = document.querySelector("#container");
+    container.insertAdjacentHTML(
+      "beforeend",
+      `
       <footer>
         <div>
           <p class="footer__logo">
@@ -320,9 +325,10 @@ class Footer extends HTMLElement {
           <span>통신판매업 : 제1999-서울종로-0420호</span>
         </div>
       </footer>
-    `)
+    `
+    );
   }
 }
 
-customElements.define('app-header', Header);
-customElements.define('app-footer', Footer);
+customElements.define("app-header", Header);
+customElements.define("app-footer", Footer);

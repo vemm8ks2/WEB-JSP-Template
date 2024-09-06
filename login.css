@@ -53,11 +53,12 @@
   }
 }
 
-[for="login_pwd"] { 
+[for="login_pwd"] {
   margin-top: 2rem;
 }
 
-[for="login_id"], [for="login_pwd"] {
+[for="login_id"],
+[for="login_pwd"] {
   position: relative;
   width: 100%;
 
@@ -73,13 +74,13 @@
       border-bottom-color: #aaa;
 
       & + span {
-        transform: translateY(-25px) scale(.75);
+        transform: translateY(-25px) scale(0.75);
         left: 0.25rem;
       }
     }
 
     &:not(:placeholder-shown) + span {
-      transform: translateY(-25px) scale(.75);
+      transform: translateY(-25px) scale(0.75);
       left: 0.25rem;
     }
   }

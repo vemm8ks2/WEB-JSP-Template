@@ -4,15 +4,15 @@
 
 @layer base {
   @font-face {
-    font-family: 'base-Regular';
-    src: url('assets/fonts/base-Regular.ttf');
+    font-family: "base-Regular";
+    src: url("assets/fonts/base-Regular.ttf");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'base-Bold';
-    src: url('assets/fonts/base-Bold.ttf');
+    font-family: "base-Bold";
+    src: url("assets/fonts/base-Bold.ttf");
     font-weight: 700;
     font-style: normal;
   }
