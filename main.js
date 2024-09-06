@@ -81,6 +81,7 @@ class Header extends HTMLElement {
                         <li class="hover:bg-slate-100 [&:hover>a]:text-slate-700">
                           <a href="#" class="w-full px-4 py-2">AI/딥러닝 PC</a>
                         </li>
+                        <hr class="m-2">
                       </ul>
                     </div>
                   </li>
