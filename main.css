@@ -499,13 +499,17 @@ a {
 }
 
 .primary-btn.default-btn-color {
-  background-color: var(--primary-color);
+  background-color: var(--gray-700);
   color: var(--primary-sub-color);
 }
 
 .primary-btn.reverse-btn-color {
   background-color: var(--primary-sub-color);
-  color: var(--primary-color);
+  color: var(--gray-700);
+
+  &:hover {
+    background-color: var(--primary-point-color);
+  }
 }
 
 label.primary-input {
@@ -569,6 +573,7 @@ main {
 header {
   padding: 1rem;
   border-bottom-width: 1px;
+  border-bottom-color: var(--gray-100);
 }
 
 .header-top-wrapper {
@@ -635,6 +640,7 @@ header {
 
   & > a:nth-of-type(2) > svg {
     width: 2rem;
+    fill: none;
     transform: translateY(0.1rem);
 
     & > path {
@@ -771,6 +777,7 @@ footer {
   padding: 1rem;
   gap: 1rem;
   border-top-width: 1px;
+  border-top-color: var(--gray-100);
 }
 
 .footer__logo {

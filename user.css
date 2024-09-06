@@ -9,7 +9,7 @@
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   border-radius: 0.5rem;
 
   & > hr {
@@ -22,19 +22,22 @@
 }
 
 .user-wrapper__image {
-  border-width: 8px;
-  /* border-gray-400 */
   width: 8rem;
   height: 8rem;
-  border-radius: 9999px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
 
   & > svg {
     width: 100%;
-    /* fill-gray-400 */
-    transform: translateY(0.25rem);
+    fill: none;
+
+    & > path {
+      stroke-linecap: round;
+    }
+
+    circle,
+    path {
+      stroke-width: 1px;
+      stroke: var(--gray-500);
+    }
   }
 }
 

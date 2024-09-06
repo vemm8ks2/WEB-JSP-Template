@@ -30,37 +30,49 @@ class Header extends HTMLElement {
             </button>
           </form>
 
-          <!-- 로그인 상태 UI
-          <div class="header-top__logged-in"> 
+          <!-- 로그인 UI -->
+          <!-- <div class="header-top__logged-in">
             <a href="#">
-              <div class="relative">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 483.1 483.1" xml:space="preserve">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                enable-background="new 0 0 512 512"
+              >
+                <g>
                   <g>
-                    <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6 c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3
-                      C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1
-                      c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"/>
+                    <path
+                      d="m464.5,301.1l36.5-178h-359.7l-12.5-59.2-108.4-52.9-9.4,18.7 99,47.8 50,238.8h289c0,0 28.5,17.9 17.5,40.5-4.9,7-12.5,15.6-26.1,15.6h-287.6v20.6h287.7c19.8,0 36.5-10.4 45.9-27 18.4-34.4-21.9-64.9-21.9-64.9zm-286.7-5.7l-32.3-151.6h330.5l-31.3,151.6h-266.9z"
+                    />
+                    <path
+                      d="m212.2,422.1c-21.9,0-39.6,17.6-39.6,39.4s17.7,39.4 39.6,39.4 39.6-17.6 39.6-39.4-17.7-39.4-39.6-39.4zm0,58.1c-10.4,0-18.8-8.3-18.8-18.7s8.3-18.7 18.8-18.7 18.8,8.3 18.8,18.7-8.4,18.7-18.8,18.7z"
+                    />
+                    <path
+                      d="m424.9,422.1c-21.9,0-39.6,17.6-39.6,39.4s17.7,39.5 39.6,39.5 40.7-17.6 39.6-39.4c0-21.8-17.7-39.5-39.6-39.5zm18.8,39.5c0,10.4-8.3,18.7-18.8,18.7s-18.8-8.3-18.8-18.7 8.3-18.7 18.8-18.7 19.8,8.3 18.8,18.7z"
+                    />
                   </g>
-                </svg>
-                <div>
-                  <span>0</span>
-                </div>
-              </div>
+                </g>
+              </svg>
             </a>
             <a href="user.html">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32" xml:space="preserve"><path d="M16 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zM27 32a1 1 0 0 1-1-1v-6.115a6.95 6.95 0 0 0-6.942-6.943h-6.116A6.95 6.95 0 0 0 6 24.885V31a1 1 0 1 1-2 0v-6.115c0-4.93 4.012-8.943 8.942-8.943h6.116c4.93 0 8.942 4.012 8.942 8.943V31a1 1 0 0 1-1 1z"/></svg>
-              </div>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="9" r="3" />
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20"
+                />
+              </svg>
             </a>
-          </div> 
-          -->
+          </div> -->
 
-          <!-- 로그인, 회원가입 버튼 -->
+          <!-- 비로그인 UI -->
           <div class="header-top__logged-out">
             <a href="login.html">
-              <button class="primary-btn">로그인</button>
+              <button class="primary-btn default-btn-color">로그인</button>
             </a>
             <a href="register.html">
-              <button class="primary-btn">회원가입</button>
+              <button class="primary-btn reverse-btn-color">회원가입</button>
             </a>
           </div>
         </div>
@@ -69,10 +81,14 @@ class Header extends HTMLElement {
         <nav class="header-bottom__nav">
           <ul class="header-bottom__wrapper">
             <li class="header-bottom__category-level-1">
-              <span>컴퓨터&#183;노트북</span>
+              <a href="#">
+                <span>컴퓨터&#183;노트북</span>
+              </a>
               <ul class="header-bottom__category-level-2__wrapper">
                 <div>
-                  <span>노트북/데스크탑</span>
+                  <a href="#">
+                    <span>노트북/데스크탑</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -98,7 +114,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>입출력장치</span>
+                  <a href="#">
+                    <span>입출력장치</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -127,7 +145,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>PC부품</span>
+                  <a href="#">
+                    <span>PC부품</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -149,10 +169,14 @@ class Header extends HTMLElement {
               </ul>
             </li>
             <li class="header-bottom__category-level-1">
-              <span>가전&#183;TV</span>
+              <a href="#">
+                <span>가전&#183;TV</span>
+              </a>
               <ul class="header-bottom__category-level-2__wrapper">
                 <div>
-                  <span>영상/음향가전</span>
+                  <a href="#">
+                    <span>영상/음향가전</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -181,7 +205,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>생활/계절가전</span>
+                  <a href="#">
+                    <span>생활/계절가전</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -206,7 +232,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>주방가전</span>
+                  <a href="#">
+                    <span>주방가전</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -228,10 +256,14 @@ class Header extends HTMLElement {
               </ul>
             </li>
             <li class="header-bottom__category-level-1">
-              <span>태블릿&#183;모바일&#183;게임</span>
+              <a href="#">
+                <span>태블릿&#183;모바일&#183;게임</span>
+              </a>
               <ul class="header-bottom__category-level-2__wrapper">
                 <div>
-                  <span>태블릿/스마트폰</span>
+                  <a href="#">
+                    <span>태블릿/스마트폰</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -252,7 +284,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>주변기기</span>
+                  <a href="#">
+                    <span>주변기기</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -273,7 +307,9 @@ class Header extends HTMLElement {
                 </div>
                 <hr />
                 <div>
-                  <span>게임기</span>
+                  <a href="#">
+                    <span>게임기</span>
+                  </a>
                   <li class="header-bottom__category-level-2">
                     <div>
                       <ul class="header-bottom__category-level-3__wrapper">
@@ -312,13 +348,16 @@ class Footer extends HTMLElement {
       `
       <footer>
         <div>
-          <p class="footer__logo">
-            TEAM.<span>T</span>
+          <p class="footer__logo">TEAM.<span>T</span></p>
+          <p class="footer__copyright">
+            Copyright &copy; TEAM.T Co. Ltd. All Rights Reserved.
           </p>
-          <p class="footer__copyright">Copyright &copy; TEAM.T Co. Ltd. All Rights Reserved.</p>
         </div>
         <div class="footer__info">
-          <span>주소 : (우) 03048 서울특별시 종로구 청와대로 1 (세종로, 청와대)</span>
+          <span
+            >주소 : (우) 03048 서울특별시 종로구 청와대로 1 (세종로,
+            청와대)</span
+          >
           <div>
             <span>대표이사 : 레이 크록 / Ray Kroc</span>
             <span>사업자번호 : 000-00-00000</span>
@@ -326,7 +365,7 @@ class Footer extends HTMLElement {
           <span>통신판매업 : 제1999-서울종로-0420호</span>
         </div>
       </footer>
-    `
+      `
     );
   }
 }
