@@ -53,46 +53,6 @@
   }
 }
 
-[for="login_pwd"] {
+label[for]:not(:first-of-type) {
   margin-top: 2rem;
-}
-
-[for="login_id"],
-[for="login_pwd"] {
-  position: relative;
-  width: 100%;
-
-  & > input {
-    width: 100%;
-    border-bottom-width: 1px;
-    padding: 0.5rem;
-
-    &:focus {
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-      /* border-b-slate-500 */
-      border-bottom-color: #aaa;
-
-      & + span {
-        transform: translateY(-25px) scale(0.75);
-        left: 0.25rem;
-      }
-    }
-
-    &:not(:placeholder-shown) + span {
-      transform: translateY(-25px) scale(0.75);
-      left: 0.25rem;
-    }
-  }
-
-  & > span {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.75rem;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    /* text-slate-500 */
-    pointer-events: none;
-  }
 }

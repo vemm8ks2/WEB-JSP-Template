@@ -587,6 +587,47 @@ video {
   /* text-white */
 }
 
+label.primary-input {
+  position: relative;
+  width: 100%;
+
+  & > input {
+    width: 100%;
+    border-bottom-width: 1px;
+    padding: 0.5rem;
+
+    &:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      /* border-b-slate-500 */
+      border-bottom-color: #aaa;
+
+      & + span {
+        transform: translateY(-25px);
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+    }
+
+    &:not(:placeholder-shown) + span {
+      transform: translateY(-25px);
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+  }
+
+  & > span {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    /* text-slate-500 */
+    pointer-events: none;
+  }
+}
+
 /* ====== 컨테이너 ====== */
 #container {
   max-width: 64rem;
