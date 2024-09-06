@@ -49,12 +49,12 @@ class Header extends HTMLElement {
           
           <!-- 로그인, 회원가입 버튼 -->
           <div class="header-top__logged-out">
-            <a href="#">
+            <a href="login.html">
               <button class="primary-btn">
                 로그인
               </button>
             </a>
-            <a href="#">
+            <a href="register.html">
               <button class="primary-btn">
                 회원가입
               </button>
