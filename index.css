@@ -8,8 +8,10 @@
   margin-top: 3rem;
 }
 
-.display-products {
-  margin-top: 4rem;
+.display-products__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
 }
 
 .display-products__header {
@@ -19,25 +21,8 @@
   margin-bottom: 2rem;
 }
 
-.display-products__wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 0.5rem;
-}
-
-.display-products__product {
-  width: 13rem;
-
-  & > a > p:first-of-type {
-    margin-top: 0.5rem;
-  }
-}
-
-.display-products__skeleton {
-  height: 15rem;
-  border-radius: 0.375rem;
-  /* bg-gray-50 */
-  background: #eee;
+.display-products {
+  margin-top: 4rem;
 }
 
 .banner-02 {

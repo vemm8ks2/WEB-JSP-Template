@@ -464,7 +464,7 @@ video {
   font-style: normal;
 }
 
-/* ====== 색상 ====== */
+/* ====== 변수 ====== */
 :root {
   --primary-color: #0d6efd;
   --primary-sub-color: #fff;
@@ -482,6 +482,16 @@ video {
   --gray-950: #030712;
   --black: #000;
   --white: #fff;
+
+  --checkmark-polygon: polygon(
+    17% 54%,
+    28% 43%,
+    38% 54%,
+    70% 22%,
+    81% 33%,
+    38% 75%,
+    17% 54%
+  );
 }
 
 /* ====== 공통 ====== */
@@ -563,6 +573,108 @@ label.primary-input {
   }
 }
 
+input[type="radio"].primary-checkmark-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(0.25rem);
+  cursor: pointer;
+  background-color: var(--gray-300);
+  clip-path: var(--checkmark-polygon);
+
+  &:checked {
+    background-color: var(--gray-700);
+  }
+
+  & + label {
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+input[type="radio"].primary-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--white);
+  border-radius: 9999px;
+  border: 2px solid var(--gray-300);
+  transform: translateY(0.25rem);
+  cursor: pointer;
+
+  & + label {
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &:checked {
+    border: 5px solid var(--gray-700);
+  }
+}
+
+input[type="checkbox"].primary-checkbox {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--white);
+  border: 2px solid var(--gray-300);
+  border-radius: 9999px;
+  transform: translateY(0.25rem);
+  cursor: pointer;
+
+  & + label {
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -0.1rem;
+    bottom: -0.15rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--gray-300);
+    clip-path: var(--checkmark-polygon);
+  }
+
+  &:checked {
+    border: 2px solid var(--gray-700);
+
+    &::before {
+      background-color: var(--gray-700);
+    }
+  }
+}
+
+.display-products__product {
+  width: 13rem;
+
+  & > a > p:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
+.display-products__skeleton {
+  height: 15rem;
+  border-radius: 0.375rem;
+  /* bg-gray-50 */
+  background: #eee;
+}
+
 /* ====== 컨테이너 ====== */
 #container {
   max-width: 64rem;
@@ -585,6 +697,7 @@ header {
   padding: 1rem;
   border-bottom-width: 1px;
   border-bottom-color: var(--gray-100);
+  z-index: 10;
 }
 
 .header-top-wrapper {
@@ -680,7 +793,6 @@ header {
 
 .header-bottom__nav {
   margin-top: 1rem;
-  z-index: 10;
 }
 
 .header-bottom__wrapper {
