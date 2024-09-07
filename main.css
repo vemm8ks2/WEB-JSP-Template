@@ -534,12 +534,13 @@ label.primary-input {
     &:focus {
       outline: 2px solid transparent;
       outline-offset: 2px;
-      border-bottom-color: var(--gray-500);
+      border-bottom-color: var(--primary-color);
 
       & + span {
         transform: translateY(-25px);
         font-size: 0.75rem;
         line-height: 1rem;
+        color: var(--primary-color);
       }
     }
 
