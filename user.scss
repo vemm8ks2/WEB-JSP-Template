@@ -11,29 +11,34 @@
   margin: 0 auto;
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
-}
-.user-wrapper > hr {
-  width: 100%;
-}
-.user-wrapper > div:not(:first-of-type) {
-  width: 100%;
+
+  & > hr {
+    width: 100%;
+  }
+
+  & > div:not(:first-of-type) {
+    width: 100%;
+  }
 }
 
 .user-wrapper__image {
   width: 8rem;
   height: 8rem;
-}
-.user-wrapper__image > svg {
-  width: 100%;
-  fill: none;
-}
-.user-wrapper__image > svg > path {
-  stroke-linecap: round;
-}
-.user-wrapper__image > svg circle,
-.user-wrapper__image > svg path {
-  stroke-width: 1px;
-  stroke: var(--gray-500);
+
+  & > svg {
+    width: 100%;
+    fill: none;
+
+    & > path {
+      stroke-linecap: round;
+    }
+
+    circle,
+    path {
+      stroke-width: 1px;
+      stroke: var(--gray-500);
+    }
+  }
 }
 
 .user-wrapper__name {
@@ -49,4 +54,4 @@
   display: inline-block;
   width: 100%;
   padding: 0.25rem 0;
-}/*# sourceMappingURL=user.css.map */
+}
